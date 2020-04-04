@@ -7,7 +7,7 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "cy:open": "cypress open",
-    "cy:run": "cypress run --record --key=d3e05031-669d-4c90-b856-074d2907a771",
+    "cy:run": "cypress run",
     "percy": "percy exec -- npm run cy:run",
     "start": "webpack-dev-server --config webpack.js",
     "start:serve": "serve -s ./dist",

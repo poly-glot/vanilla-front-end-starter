@@ -2,7 +2,7 @@
 ![CI/CD](https://github.com/poly-glot/vanilla-front-end-starter/workflows/CI/CD/badge.svg)
 [![codecov](https://codecov.io/gh/poly-glot/vanilla-front-end-starter/branch/master/graph/badge.svg?token=K6AIDS2WN8)](https://codecov.io/gh/poly-glot/vanilla-front-end-starter)
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/poly-glot/vanilla-front-end-starter)
-[![Cypress.io Dashboard](https://img.shields.io/badge/cypress-dashboard-brightgreen.svg)](https://dashboard.cypress.io/projects/zm5abb)
+[![Cypress.io Dashboard](https://img.shields.io/badge/cypress-dashboard-brightgreen.svg)](https://dashboard.cypress.io/projects/8joug9)
 [![DeepScan grade](https://deepscan.io/api/teams/8408/projects/10599/branches/148870/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=8408&pid=10599&bid=148870)
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/poly-glot/vanilla-front-end-starter)
 
