@@ -18,7 +18,7 @@ jobs:
       - name: Setup Nodejs
         uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
+          node-version: '14.x'
 
       - name: Cache node modules
         uses: actions/cache@v1
@@ -50,7 +50,7 @@ jobs:
         run: npm run build
 
       - name: Cypress run
-        uses: cypress-io/github-action@v1
+        uses: cypress-io/github-action@v2
         with:
           record: true
           start: npm run start:serve
