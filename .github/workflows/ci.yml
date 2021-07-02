@@ -61,25 +61,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
 
-      - name: Upload Staging
-        uses: amondnet/now-deployment@v2
-        id: now-deployment-staging
-        if: github.event_name == 'pull_request'
+      - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          zeit-token: ${{ secrets.ZEIT_TOKEN }}
-          now-org-id: ${{ secrets.NOW_ORG_ID }}
-          now-project-id: ${{ secrets.NOW_PROJECT_ID_STATIC }}
-          working-directory: dist/
-
-      - name: Upload Live
-        uses: amondnet/now-deployment@v2
-        id: now-deployment-production
-        if: github.event_name == 'push'
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          zeit-token: ${{ secrets.ZEIT_TOKEN }}
-          now-org-id: ${{ secrets.NOW_ORG_ID }}
-          now-project-id: ${{ secrets.NOW_PROJECT_ID_STATIC }}
-          now-args: '--prod'
-          working-directory: dist/
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_VANILLA_FRONT_END_STARTER }}'
+          channelId: live
+          projectId: vanilla-front-end-starter
